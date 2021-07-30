@@ -2,13 +2,11 @@ FROM kalilinux/kali-rolling
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
-RUN apt-get install -y\
+RUN apt-get install -y --no-install-recommends\
         git \
-        ffmpeg \
-        mediainfo \
         unzip \
         wget \
-        gifsicle
+        axel
 
 #Gemt Some Fumks
 RUN axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
