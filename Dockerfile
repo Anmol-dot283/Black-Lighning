@@ -43,7 +43,8 @@ RUN apt-get install -y --no-install-recommends\
     procps \
     imagemagick \
     libmagic-dev \
-    policykit-1
+    policykit-1 \
+    unzip
     
 #Gemt Some Fumks
 RUN axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
