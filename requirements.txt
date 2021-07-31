@@ -137,7 +137,7 @@ spotipy==2.16.1
 sqlalchemy==1.2
 sqlparse==0.4.1
 telegraph==1.4.1
-telethon==1.17
+telethon==1.23.0
 tornado==6.1
 tqdm==4.53.0
 tswift==0.7.0
