@@ -388,8 +388,9 @@ async def lightning_pugins_query_hndlr(lightning):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"what?")))
 async def what(lightning):
     if lightning.query.user_id == bot.uid:
-        fck_bit = f"{LIGHTNINGUSER}  Use The Buttons Bellow "
-        await lightning.answer(fck_bit, alert=True)
+        fck_bit = "**Black Lightning Heres With The Detailed Help For CMDs** 😉😉 ! "
+        buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
+        await lightning.answer(fck_bit, buttons=buttons)
     else:
         txt = f"Ohh C'mon You Think That This Is For You?\n Ok I Will Complain To {LIGHTNINGUSER}👀👀"
         await lightning.answer(txt, alert=True)
