@@ -572,8 +572,30 @@ async def hmm(lightning):
         await lightning.answer(text, alert=True)
     else:
         txt = f"For {LIGHTNINGUSER} Not For You :)"
-        await lightning.answer(txt, alert=True)        
+        await lightning.answer(txt, alert=True)   
 
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"wtshit"))) 
+async def lmaao(lightning):
+     if lightning.query.user_id == bot.uid:
+        result = builder.article(
+            title="Cool",
+            text=f"**How If Face Problem \n{LIGHTNINGUSER}** \nChoose Your Problem For Help ",
+            buttons=[
+                [custom.Button.inline("Help", data="what?")],
+                [Button.url("Commands Not Working🥺", "https://t.me/lightning_support_group")],
+                [Button.url("Help Article 🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [
+                    Button.url(
+                
+                    "Want To Learn CMDS😅",
+                    "https://t.me/lightning_support_group" ,
+                    )
+                ], 
+            ],
+        )
+     else:
+            fukoff = "You Don't belong to me master's category. So, why should i follow your orders" 
+            await lightning.answer(fukoff, alert=True)
 
 """
 Thanks To Friday Userbot and @Midhun_xD For This idea
@@ -631,7 +653,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
                     "🗡яιgнт ρℓυgιи", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
                 ),
                # Thanks To Friday For This Idea
-               custom.Button.inline("〽️Stats〽️", data="stta"
+               custom.Button.inline("〽️Stats〽️", data="wtshit"
                ),
                custom.Button.inline(
                     "ℓєfт ρℓυgιи ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
