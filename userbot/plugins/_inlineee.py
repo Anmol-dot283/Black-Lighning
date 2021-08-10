@@ -234,7 +234,7 @@ async def inline_handler(lightning):
             link_preview=False,
         )
         await lightning.answer([result] if result else None)
-    elif lightning.query.user_id == bot.uid and query == "**Cool":
+    elif lightning.query.user_id == bot.uid and query.startswith("**Black") or query.startswith("Black"):
         result = builder.article(
             title="Cool",
             text=f"**How If Face Problem \n{LIGHTNINGUSER}** \nChoose Your Problem For Help ",
