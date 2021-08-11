@@ -239,13 +239,12 @@ async def inline_handler(lightning):
             title="Cool",
             text=f"**How If Face Problem \n{LIGHTNINGUSER}** \nChoose Your Problem For Help ",
             buttons=[
-                [custom.Button.inline("Help", data="what?")],
-                [Button.url("Commands Not Working🥺", "https://t.me/lightning_support_group")],
-                [Button.url("Help Article 🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
-                [
-                    Button.url(
-                
-                    "Want To Learn CMDS😅",
+                [custom.Button.inline("Help Menu😎", data="what?")],
+                [custom.Button.inline("Alive Testing😜", data="coming_soon")],
+                [custom.Button.inline("Ping🙃", data="bitch")],
+                [Button.url("Support Group🥺", "https://t.me/lightning_support_group")],
+                [Button.url("Help Article🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [Button.url("Get Updates😅",
                     "https://t.me/lightning_support_group" ,
                     )
                 ], 
