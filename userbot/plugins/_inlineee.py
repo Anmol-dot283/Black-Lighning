@@ -431,7 +431,7 @@ async def lightning_is_better(lightning):
         wews = bot.me.first_name
         weds = bot.uid
         if lightning.query.user_id == bot.uid:
-          fck_bit = f"꧁ Pong! ꧂\n\n⚘ Ping Time:- {ping}\n\n⚘ My Lightning Master [wews][tg://user?id={weds}"
+          fck_bit = f"꧁ Pong! ꧂\n\n⚘ Ping Time:- {ping}\n\n⚘ My Lightning Master [{wews}][tg://user?id={weds})"
           await lightning.edit(fck_bit, buttons=[Button.inline("Back", data="wtshit")])
         else: 
            await lightning.answer(f"I am {LIGHTNINGUSER}'s Assistant not your", alert=True)
@@ -652,7 +652,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
                     "🗡яιgнт ρℓυgιи", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
                 ),
                # Thanks To Friday For This Idea
-               custom.Button.inline("〽️Stats〽️", data="wtshit"
+               custom.Button.inline("Back", data="wtshit"
                ),
                custom.Button.inline(
                     "ℓєfт ρℓυgιи ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
