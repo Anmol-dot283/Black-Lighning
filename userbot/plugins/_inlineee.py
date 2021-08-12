@@ -429,10 +429,10 @@ async def lightning_is_better(lightning):
 
         ping = (end - start).microseconds / 1000
         wews = bot.me.first_name
-        weds = bot.uid
+        weds = bot.me.username
         if lightning.query.user_id == bot.uid:
-          fck_bit = f"꧁ Pong! ꧂\n\n⚘ Ping Time:- {ping}\n\n⚘ My Lightning Master [{wews}][tg://user?id={weds})"
-          await lightning.edit(fck_bit, buttons=[Button.inline("Back", data="wtshit")])
+          fck_bit = f"꧁ Pong! ꧂\n\n⚘ Ping Time:- {ping}\n\n⚘ My Lightning Master [{wews}][https://t.me/{weds})"
+          await lightning.edit(fck_bit, link_preview=False, buttons=[Button.inline("Back", data="wtshit")])
         else: 
            await lightning.answer(f"I am {LIGHTNINGUSER}'s Assistant not your", alert=True)
     
