@@ -12,8 +12,8 @@ currentversion = "2.1"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Black Lightning"
 ASSIS_PIC = os.environ.get("ASSIS_PIC", None)
 if ASSIS_PIC is None:
-     PM_IMG = "https://telegra.ph/file/beb843ce962a738c52cad.jpg"
-else:
+     PM_IMG = "https://telegra.ph/file/7be266d85322089965fee.jpg"
+else
      PM_IMG = ASSIS_PIC
 
 
